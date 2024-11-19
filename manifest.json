@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "UAEU Lazy Login",
+  "description": "an extesion that helps uaeu login users to login using their usernames and passwords",
+  "version": "1.0",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://idm.uaeu.ac.ae/idp/SSO.saml2"],
+  "content_scripts": [
+    {
+      "matches": ["https://idm.uaeu.ac.ae/idp/SSO.saml2"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
